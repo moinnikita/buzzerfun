@@ -8,7 +8,7 @@
     <body>
         <div class="main-container">
             <h1 id="counterText">0</h1>
-            <div class="buzzer" onclick="buzzed()"></div>
+            <div class="buzzer" id="button" onclick="buzzed()"></div>
         </div>
     </body>
     <footer>
@@ -26,7 +26,13 @@
         element.innerHTML = counter;
     }
 
+    var delayInMilliseconds = 500;
+
+    document.querySelector('#button').addEventListener('click', () => {
+    document.querySelector('#button').classList.add('clicked');
+    setTimeout(function() {
+        document.querySelector('#button').classList.remove('clicked');
+    }, delayInMilliseconds)
+    }); 
     
-
-
 </script>

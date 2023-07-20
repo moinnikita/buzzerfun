@@ -32,3 +32,10 @@ h1 {
 .buzzer:focus{
     background-color: blue;
 }
+
+.clicked {
+    background-color: rgb(180, 19, 19);
+    width: 190px;
+    height: 190px;
+    transition-duration: 250ms;
+}
