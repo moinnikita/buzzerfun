@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="main-container">
-            <h1>0</h1>
+            <h1 id="counterText">0</h1>
             <div class="buzzer" onclick="buzzed()"></div>
         </div>
     </body>
@@ -18,11 +18,15 @@
 
 <script>
     var buzzSound = new Audio('sounds/beep_boop.mp3');
-
+    var counter = 0;
     function buzzed(){
         buzzSound.play();
+        counter++;
+        const element = document.getElementById("counterText");
+        element.innerHTML = counter;
     }
 
+    
 
 
 </script>
