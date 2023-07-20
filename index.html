@@ -8,10 +8,21 @@
     <body>
         <div class="main-container">
             <h1>0</h1>
-            <div class="buzzer"></div>
+            <div class="buzzer" onclick="buzzed()"></div>
         </div>
     </body>
     <footer>
 
     </footer>
 </html>
+
+<script>
+    var buzzSound = new Audio('sounds/beep_boop.mp3');
+
+    function buzzed(){
+        buzzSound.play();
+    }
+
+
+
+</script>
