@@ -28,3 +28,7 @@ h1 {
     background-color: red;
     border-radius: 50%;
 }
+
+.buzzer:focus{
+    background-color: blue;
+}
